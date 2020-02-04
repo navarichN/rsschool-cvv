@@ -2,7 +2,7 @@
     Mobile: +375 44 721 24 06
     Telegram: @navarich
     E-mail: navarichanastasia@gmail.com
-#
+
  
 ##  Summary:
 ### I am a rational person, who likes to optimize her activities and life. I also like to learn new things and to feel how my brain works. I wanted to belong to a group of smart, interesting people who create the future. So I decided to become a programmer. 
@@ -18,7 +18,7 @@
 
 ##  Experience:
 
-### I lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.
+### I was lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.
 
 ##  Skills:
 +   Markup: **HTML5**, **Pug**
