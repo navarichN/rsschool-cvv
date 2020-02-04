@@ -18,7 +18,7 @@
 
 ##  Experience:
 
-### I was lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.
+### I lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.
 
 ##  Skills:
 +   Markup: **HTML5**, **Pug**
@@ -188,3 +188,11 @@ function showServisesForDogs() {
 btnCatImage.addEventListener('click', showServisesForCats);
 btnDogImage.addEventListener('click', showServisesForDogs);
 ```
+##  English:
++   ### I learn English at shool [Intarnational House](https://www.ih.by). My level **Pre-Intermideate(A2)**
++   ### Also i use an app called [Simpler](https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru)
++   ### And I watch movies with  English subtitles
+
+
+##  Polish:
++   ### I learn Polish myself and with a mentor online. My level **A1**
