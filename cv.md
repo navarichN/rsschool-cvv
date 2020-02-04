@@ -26,3 +26,165 @@
 +   Framework: **Vue.js**
 +   Tools: **Figma**, **VS Code**, **Git**
 +   Methodology: **BEM**
+  ##  Code examples:
+```Sass
+.list-excellence
+    +df 
+    +fdc
+    justify-content: flex-start
+    align-items: center
+    margin-top: 80px
+    width: 1084px
+    height: 327px
+    +h560
+        margin-top: 0
+    &__list
+        +df
+        +fdc
+        flex-wrap: wrap
+        width: 1062px
+        height: 200px
+        margin-top: 30px
+    &__item
+        display: inline-flex
+        width: 516px
+        height: 52px
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 32px
+        color: #FFFCFC
+        &:before
+            content: "★"
+            width: 40px
+            height: 40px
+```
+<hr>
+
+```Pug 
+<template lang = "pug">
+    div.container.pt-2
+        .form-group
+        label(for = "name")
+            | Car name
+        input.form-control(type = "text" id = "name" v-model.trim = "carName")
+
+        .form-group
+        label(for = "year")
+            | Car year
+        input.form-control(type = "text" id = "year" v-model.number = "carYear")
+
+        button.btn.btn-success(@click = "createCar")
+        | Create car
+
+        button.btn.btn-primary(@click = "loadCars")
+        | Load cars
+
+        hr
+
+        ul.list-group
+        li.list-group-item(v-for = "car of cars" :key = "car.id")
+            strong
+            | {{ car.name }} 
+            | {{ car.year }}
+</template> 
+```
+
+
+<hr>
+
+
+```html
+       <section id = "stocks" class = "stocks section3">
+            <h3 class = "title">Внимание, АКЦИЯ!</h3>
+           <div class = "wrapper">
+                <div class = "stocks-slider">
+                    <div class = "stocks-slider__head">
+                        <p class = "stocks-slider__description">Скидка на груминг 20% до 21 апреля</p>
+                    </div>
+                    <span class = "exp-string">До конца акции осталось:</span>
+                    <div class = "stocks-slider__time">
+                        <div class = "stocks-slider__item stocks-slider__item_day">
+                            <span>12</span>
+                            <hr>
+                            <span>день</span>
+                        </div>
+                        <div class = "stocks-slider__item stocks-slider__item_hour">
+                            <span>12</span>
+                            <hr>
+                            <span>день</span>
+                        </div>
+                        <div class = "stocks-slider__item stocks-slider__item_minute">
+                            <span>12</span>
+                            <hr>
+                            <span>день</span>
+                        </div>
+                    </div>
+                </div>
+                <form class = "back-call stocks-back-call">
+                        <h3 class = "back-call__title">Закажите обратный звонок</h3>
+                        <input type = "text" class = "back-call__input back-call__input_name" placeholder="Порода и имя">
+                        <input type = "tel" class = "back-call__input back-call__input_tel" placeholder="Номер телефона">
+                        <input name = "submit" type = "submit" class = "back-call__input back-call__input_btn" value = "Заказать">
+                </form>
+
+           </div>
+       </section> 
+```
+
+
+<hr>
+
+
+
+```JavaScript
+let pageServWrap = pageServises.querySelector('.serv-wrapper');
+let btnBlock = pageServises.querySelector('.servises__btn-block');
+let btnCatImage = pageServises.querySelector('.servises__btn-block_cats');
+let btnCatString = pageServises.querySelector('.servises__caption_cats');
+let btnDogImage = pageServises.querySelector('.servises__btn-block_dogs');
+let btnDogString = pageServises.querySelector('.servises__caption_dogs');
+
+function showServisesForCats() {
+    btnDogString.remove();
+
+    let blockServList = document.createElement('div');
+
+    blockServList.className = "serv-list serv-list_cats";
+    blockServList.insertAdjacentHTML('afterbegin', '<div class = "serv-list__wrapper"><ul class = "serv-list__item"><span>Груминг</span></ul><ul class = "serv-list__item"><span>Магазин</span></ul><ul class = "serv-list__item"><span>Маникюр</span></ul><ul class = "serv-list__item"><span>Дрессировка</span></ul><ul class = "serv-list__item"><span>Магазин</span></ul><ul class = "serv-list__item"><span>Массаж</span></ul></div>');
+    
+    let newCatBtnBlock = document.createElement('div');
+    
+    newCatBtnBlock.className = "servises__btn-block-on";
+    newCatBtnBlock.insertAdjacentHTML('afterbegin', '<img src = "styles/img/bbb.png" class = "servises__btn-block-on_cats"></img>');
+    
+    btnDogImage.replaceWith(blockServList);
+    btnBlock.replaceWith(newCatBtnBlock);
+
+    setTimeout(blockServList.classList.add('appearance-on-the-right'), 10000);
+}
+
+function showServisesForDogs() {
+    btnCatString.remove();
+    btnDogString.remove();
+
+    let blockServList = document.createElement('div');
+
+    blockServList.className = "serv-list serv-list_dogs";
+    blockServList.insertAdjacentHTML('afterbegin', '<div class = "serv-list__wrapper"><ul class = "serv-list__item"><span>Груминг</span></ul><ul class = "serv-list__item"><span>Магазин</span></ul><ul class = "serv-list__item"><span>Маникюр</span></ul><ul class = "serv-list__item"><span>Дрессировка</span></ul><ul class = "serv-list__item"><span>Магазин</span></ul><ul class = "serv-list__item"><span>Массаж</span></ul></div>');
+
+    let newDogBtnBlock = document.createElement('div');
+
+    newDogBtnBlock.className = "servises__btn-block-on";
+    newDogBtnBlock.insertAdjacentHTML('afterbegin', '<img src = "styles/img/druk.png" class = "servises__btn-block-on_dogs"></img>');
+
+    btnCatImage.replaceWith(blockServList);
+    btnDogImage.replaceWith(newDogBtnBlock);
+
+    setTimeout(blockServList.classList.add('appearance-on-the-left'), 10000);
+}
+
+btnCatImage.addEventListener('click', showServisesForCats);
+btnDogImage.addEventListener('click', showServisesForDogs);
+```
