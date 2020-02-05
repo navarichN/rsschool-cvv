@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-color: #698B65;
+}
+  
+* {
+  font-family: Candara;
+  color: aliceblue;
+}
+  
+.parallax-img {
+  height: 100px;
+  width: 100%;
+}
+
+.parallax-img {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+nav {
+  position: fixed;
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+
+ul {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.cutaway-wrapper {
+  height: 700px;
+}
+
+.cutaway-content {
+  border-radius: 100px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88%;
+}
+
+.cutaway-parallax-img {
+  margin: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2019/10/17/13/53/rosa-4556957_960_720.jpg');
+  height: 100px;
+}
+
+.cutaway-photo {
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px;
+  border: dotted 5px white;
+}
+
+.cutaway-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#about {
+  height: 900px;
+}
+
+.about-content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-wrapper {
+  height: 800px;
+}
+
+.about-parallax-img {
+  background-image: url('https://cdn.pixabay.com/photo/2019/10/17/13/53/rosa-4556957_960_720.jpg');
+  height: 200px;
+}
+
+.about-summary {
+  width: 800px;
+  padding: 40px;
+  font-size: 20px;
+  border: 5px dotted white;
+  border-radius: 80px;
+}
+
+
+
+.education-wrapper {
+  height: 700px;
+}
+
+.education-parallax-img {
+  background-image: url('https://cdn.pixabay.com/photo/2020/01/30/13/40/cow-parsley-4805457_960_720.jpg');
+  height: 300px;
+}
+
+.education-parallax-img-under {
+  height: 400px ;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-list {
+  width: 900px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
