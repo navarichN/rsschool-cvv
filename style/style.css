@@ -1,71 +1,134 @@
 body {
   margin: 0;
-  background-color: #698B65;
+  background-color: rgb(69, 61, 82);
 }
   
 * {
-  font-family: Candara;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: aliceblue;
-}
-  
-.parallax-img {
-  height: 100px;
-  width: 100%;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(211, 199, 245);
 }
 
-.parallax-img {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} 
-
-nav {
-  position: fixed;
-  color: white;
-  width: 100%;
-  height: 50px;
+h1 {
+  font-size: 32px;
+  margin: 0;
 }
 
-ul {
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+h2 {
+  font-size: 28px;
+  margin: 15px;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
+h3 {
+  font-size: 26px;
+  margin: 0;
 }
 
-.cutaway-wrapper {
-  height: 700px;
+p {
+  font-size: 22px;
 }
 
-.cutaway-content {
-  border-radius: 100px;
-  margin: 30px;
+li {
+  font-size: 22px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color:  rgb(200, 189, 211);
+}
+
+a:hover {
+  color:  rgb(255, 255, 255);
+}
+
+a:active {
+  color:   rgb(69, 61, 82);
+}
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 88%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 400px;
 }
 
-.cutaway-parallax-img {
-  margin: 0;
-  background-image: url('https://cdn.pixabay.com/photo/2019/10/17/13/53/rosa-4556957_960_720.jpg');
+.background-photo {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 100%;
+  box-shadow: 1px 1px 2px black, 0 0 1em white;
+} 
+
+.box-backlight {
+  border: dotted 5px white;
+  box-shadow: 1px 1px 2px black, 0 0 0.7em rgb(211, 199, 245);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.nav-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.nav-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100px;
+  margin-right: 5px;
+  box-shadow: 1px 1px 2px black, 0 0 1em rgb(211, 199, 245) inset;
+  border-radius: 0 0 8px 8px;
+  background-color: rgb(69, 61, 82);
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  margin-left: 0;
+}
+
+.cutaway-information-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.cutaway-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.cutaway-background-photo {
+  background-image: url('../img/desktop.png');
   height: 100px;
 }
 
 .cutaway-photo {
-  overflow: hidden;
   height: 200px;
   width: 200px;
-  border-radius: 100px;
   margin: 20px;
-  border: dotted 5px white;
+  border-radius: 100px;
+  overflow: hidden;
 }
 
 .cutaway-information {
@@ -75,69 +138,93 @@ ul {
   align-items: center;
 }
 
-.content {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-#about {
-  height: 900px;
-}
-
-.about-content {
-  height: 700px;
+.summary-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 665px;
 }
 
-.about-wrapper {
-  height: 800px;
+.summary-background-photo {
+  background-image: url('../img/desktop.png');
+  height: 125px;
+  box-shadow: 1px 1px 2px black, 0 0 1em white;
 }
 
-.about-parallax-img {
-  background-image: url('https://cdn.pixabay.com/photo/2019/10/17/13/53/rosa-4556957_960_720.jpg');
-  height: 200px;
-}
-
-.about-summary {
-  width: 800px;
-  padding: 40px;
+.summary-text {
   font-size: 20px;
-  border: 5px dotted white;
+  min-height: 300px;
+  max-width: 800px;
+  margin-top: 60px;
+  padding: 40px;
   border-radius: 80px;
 }
 
-
-
-.education-wrapper {
-  height: 700px;
+.education-background-photo {
+  background-image: url('../img/desktop.png');
 }
-
-.education-parallax-img {
-  background-image: url('https://cdn.pixabay.com/photo/2020/01/30/13/40/cow-parsley-4805457_960_720.jpg');
-  height: 300px;
-}
-
-.education-parallax-img-under {
-  height: 400px ;
-}
-
 .education-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
-
 .education-list {
-  width: 900px;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   font-size: 20px;
+  width: 900px;
+  height: 200px;
+}
+
+.expireince-background-photo {
+  background-image: url('../img/code.png');
+}
+
+.expireince-content {
+  height: 400px;
+}
+
+.expireince-content p {
+  margin: 10px;
+}
+
+.expireince-content h1 {
+  margin-bottom: 30px;
+}
+
+.skills-content {
+  height: 400px;
+}
+
+.skills-content ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .skills-content li {
+  margin-top: 10px;
+ }
+
+.skills-background-photo {
+  background-image: url('../img/code.png');
+}
+
+.languages-background-photo {
+  background-image: url('../img/codetwo.png');
+}
+
+.footer-content {
+  height: 45px;
+  padding: 5px;
+}
+.footer-content p {
+  font-size: 12px;
+  margin: 0;
 }

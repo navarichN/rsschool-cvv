@@ -5,49 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-  <nav>
-    <ul class = "content">
-      <li>About</li>
-      <li>Skills</li>
-      <li>Code</li>
-      <li>Languages</li>
+  <nav id = "navigation">
+    <ul class = "nav-content">
+      <li><a href = "#">Cutaway</a></li>
+      <li><a href = "#education">Education</a></li>
+      <li><a href = "#experience">Experience</a></li>
+      <li><a href = "#skills">Skills</a></li>
+      <li><a href = "#languages">My languages</a></li>
     </ul>
   </nav>
   <main>
-    <section id = "cutaway" class = "cutaway-wrapper">
-      <div class="parallax-img cutaway-parallax-img">
+    <section id = "cutaway">
+      <div class="cutaway-background-photo background-photo">
       </div>
       <div class = "cutaway-content content">
-
-        <div class = "cutaway-photo">
+        <div class = "cutaway-photo box-backlight">
           <img src = "img/sea.jpg" alt = "" width="260px" height="305px">
         </div>
-
         <div class = "cutaway-information">
           <h1>Navarich Anastasia</h1>
           <h2>Junior Frontend Developer</h2>
           <h3>Contacts:</h3>
-          <ul class = "contacts">
-            <li>mobile: +375447212406</li>
+          <ul class = "cutaway-information-contacts">
             <li>telegram: @navarich</li>
+            <li>mobile: +375447212406</li>
             <li>E-mail: navarichanastasia@gmail.com</li>
           </ul>
         </div>
-
       </div>
-      
     </section>
 
-    <section id = "about" class="about-wrapper">
-      <div class="parallax-img about-parallax-img">
+    <section id = "summary">
+      <div class="background-photo summary-background-photo">
       </div>
-      <div class = "content about-content">
+      <div class = "content summary-content">
         <h1>Summary</h1>
-        <div class = "about-summary">
-          <p >I am a rational person, who likes to optimize her activities and life. I also like to learn new things and to feel how my brain works. I wanted to belong to a group of smart, interesting people who create the future. So I decided to become a programmer. 
+        <div class = "summary-text box-backlight">
+          <p>I am a rational person, who likes to optimize her activities and life. I also like to learn new things and to feel how my brain works. I wanted to belong to a group of smart, interesting people who create the future. So I decided to become a programmer. 
           </p>
           <p>In the beginning it was very difficult, but I didn't give up. My enthusiasm and endurance keep to grow, because when you cannot complete a task, try to do it again and again, and when you come to an answer, you experience incredible delight! Serotonin strike in your brain and you become addicted to it.
           </p>
@@ -57,10 +55,11 @@
       </div>
     </section>
  
-    <section id = "education" class = "education-wrapper">
-      <div class="parallax-img education-parallax-img">
+    <section id = "education">
+      <div class="education-background-photo background-photo">
       </div>
-      <div class = "content education-content">
+      <div class = "education-content content">
+        <a name = "education"></a>
         <h1>Education:</h1>
         <ul class = "education-list">
           <li><strong>Teach Me Skills - </strong>Frontend-development / offline</li>
@@ -69,34 +68,56 @@
           <li><strong>CodeAcademy - </strong>Html & Css / online</li>
         </ul>
       </div>
-
     </section>
-    <div class="parallax-img education-parallax-img education-parallax-img-under">
-    </div>
-    <section id = "expireince" class = "expireince-wrapper">
+
+    <section id = "expireince">
+      <a name = "experience"></a>
+      <div class="background-photo expireince-background-photo">
+      </div>
       <div class = "content expireince-content">
         <h1>Experience:</h1>
-
-        <p>I was lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.</p>
-        
+        <p>I was lucky to have internship in <a href = "https://lexxtg.com">LEXX Trading Platform</a>.
+        <p>At that time I first tried to work with Git, namely <a href = "https://gitlab.com/navarichanastasia">GitLab</a>, because this team uses it.</p> 
+        <p> Also I saw the structure of a large project on Vue.js, how the work was organized on it
+        <p>and this formed my idea of ​​what else I need to learn.</p>
       </div>
     </section>
 
-    <section id = "scills" class = "content">
-      <h1>Skills:</h1>
-      <ul>
-        <li>Markup: HTML5, Pug</li>
-        <li>Style: CSS, Sass</li>
-        <li>Framework: Vue.js</li>
-        <li>Tools: Figma, VS Code, Git</li>
-        <li>Methodology: **BEM** </li>
-      </ul>
+    <section id = "scills">
+      <a name = "skills"></a>
+      <div class="background-photo skills-background-photo"></div>
+      <div class = "content skills-content">
+        <h1><h1>Skills:</h1></h1>
+        <ul>
+          <li>Markup: <strong>HTML5, Pug</strong></li>
+          <li>Style: <strong>CSS, Sass</strong></li>
+          <li>Framework: <strong>Vue.js</strong></li>
+          <li>Tools: <strong>Figma, VS Code, Git</strong></li>
+          <li>Methodology: <strong>BEM</strong></li>
+        </ul>
+      </div>
+
     </section>
-    
-    <section id = "code" class = "content"></section>
-   
-    <section id = "languages" class = "content"></section>
+    <section id = "languages">
+      <a name = "languages"></a>
+      <div class="background-photo languages-background-photo"></div>
+      <div class = "content languages-content">
+        <h1>English:</h1>
+          <p>I learn English at shool <a href="https://www.ih.by">Intarnational House</a>. My level is <strong>Pre-Intermideate(A2)</strong>.</p> 
+          <p>Also i use an app called <a href="https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru">Simpler.</a></p>
+          <p>And I watch movies with English subtitles.</p>
+          <h1>Polish:</h1>
+          <p>I learn Polish myself and with a mentor online. My level is <strong>A1.</strong>
+          </p>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="background-photo languages-background-photo"></div>
+    <div class = "content footer-content">
+      <p>Autor: Anastasia Navarich</p>
+      <p>2020 ©</p>
+    </div>
+  </footer>
 </body>
 </html>
