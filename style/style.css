@@ -143,7 +143,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 665px;
+  height: 665px;
 }
 
 .summary-background-photo {
@@ -227,4 +227,47 @@ ul {
 .footer-content p {
   font-size: 12px;
   margin: 0;
+}
+@media (max-height: 630px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  .background-photo {
+    height: 120px;
+    width: 100%;
+  } 
+  
+  .cutaway-background-photo {
+    height: 49px;
+  }
+
+  .cutaway-content {
+    padding: 20px;
+    height: 500px;
+  }
+
+  .summary-content {
+    padding: 30px;
+    height: 500px;
+  }
+
+  .summary-text {
+    padding: 30px;
+    margin: 30px 0 30px 0;
+  }
+
+  .summary-text p {
+    font-size: 20px;
+  }
+  
+  .languages-content{
+    padding: 5px;
+  }
 }
