@@ -18,7 +18,7 @@
 
 ##  Experience:
 
-### I was lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what elese I need to learn.
+### I was lucky to have internship in [LEXX Trading Platform](https://lexxtg.com). At that time I first tried to work with Git, namely [GitLab](https://gitlab.com/navarichanastasia), because this team uses it. Also I saw the structure of a large project on **Vue.js**, how the work was organized on it and this formed my idea of ​​what else I need to learn.
 
 ##  Skills:
 +   Markup: **HTML5**, **Pug**
@@ -26,7 +26,8 @@
 +   Framework: **Vue.js**
 +   Tools: **Figma**, **VS Code**, **Git**
 +   Methodology: **BEM**
-  ##  Code examples:
+
+##  Code examples:
 ```Sass
 .list-excellence
     +df 
